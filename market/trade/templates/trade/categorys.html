@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+</head>
+<body>
+    <head> Product Categories </head>
+    {% for categorys in categorys %}
+    <ol>
+        <li>Brand: {{ categorys.brand }}</li>
+        <li>Product: {{ categorys.product }}</li>
+        <li>Type: {{ categorys.type }}</li>
+    </ol>
+    {% empty %}
+    <p>We have no category. Please go and create one</p>
+    {% endfor %}
+</body>
+</html>

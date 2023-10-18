@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <style>
+        .products-table{
+            border: 1px solid red;
+            border-collapse: collapse;
+        }
+
+        .products-table td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .products-table-head td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>{{ product.id }}</li>
+        <li>{{ product.name }}</li>
+        <li>{{ product.description }}</li>
+        <li>{{ product.price }}</li>
+    </ul>
+
+    {% if product.comment_set.all %}
+    <table class="products-table">
+        <tr class="products-table-head">
+            <td>ID</td>
+            <td>Name</td>
+            <td>comment</td>
+        </tr>
+        {% for comment in product.comment_set.all %}
+        <tr>
+            <td>{{ forloop.counter }} </td>
+            <td>{{ comment.name }}</td>
+            <td>{{ comment.comment }}</td>
+        </tr>
+        {% empty %}
+            <p>The comments table is empty. Please go and create one</p>
+        {% endfor %}       
+    </table>
+    {% endif %}
+</body>
+</html>

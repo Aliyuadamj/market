@@ -1,0 +1,33 @@
+h1{
+    color: yellow;
+    background-color: black;
+}
+
+.jss1{
+    color: blue;
+}
+
+.jss2{
+    color: red;
+}
+
+.jss3{
+    color: green;
+}
+#jfir{
+    color:yellow
+}
+
+tr{
+    margin: 0px;
+    padding: 0px;
+}
+td{
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+    margin: 0px;
+    padding: 0px;
+}
+
+

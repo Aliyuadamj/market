@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <style>
+        .products-table{
+            border: 1px solid red;
+            border-collapse: collapse;
+        }
+
+        .products-table td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .products-table-head td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>List of products</h3>
+    <form action="{% url 'products' %}" method="post">
+        {% csrf_token %}
+        {{ product_form }}
+        <button type="submit">Submit</button>
+    </form>
+    <table class="products-table">
+        <tr class="products-table-head">
+            <td>Serail Number</td>
+            <td>Name</td>
+            <td>Description</td>
+            <td>Price</td>
+        </tr>
+        {% for product in products %}
+        <tr>
+            <td>{{ forloop.counter }} </td>
+            <td>{{ product.name }}</td>
+            <td>{{ product.description }}</td>
+            <td>{{ product.price }}</td>
+        </tr>
+        {% empty %}
+            <p>The products table is empty. Please go and create one</p>
+        {% endfor %}       
+    </table>
+</body>
+</html>

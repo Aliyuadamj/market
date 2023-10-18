@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="{% static 'trade/products.css' %}">
+    <style>
+        /* p{
+            color: red;
+            max-width: 50%;
+            margin: auto;
+        } */
+    </style>
+</head>
+<body>
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4 style="background-color: blue;">heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+    <p>paragraph</p>
+    <p style="color: gold;">Lorem ipsum dolor sit, amet <em>consectetur</em> adipisicing elit. Fugit suscipit iusto quaerat magni sint provident dolores aperiam, alias, reiciendis aliquam laudantium repellat nostrum asperiores corrupti dolor. Sint voluptatum mollitia quibusdam.</p>
+    <p>Lorem ipsum <strong>dolor</strong> sit amet consectetur adipisicing elit. Odit eius quisquam assumenda vitae illum amet. Neque harum quaerat quidem praesentium doloribus rerum modi deleniti ipsum repellendus, itaque adipisci nobis quis!</p>
+    <p>Lorem ipsum dolor sit, amet <i>consectetur</i> adipisicing elit. Fugit suscipit iusto quaerat magni sint provident dolores aperiam, alias, reiciendis aliquam laudantium repellat nostrum asperiores corrupti dolor. Sint voluptatum mollitia quibusdam.</p>
+    <p>Lorem ipsum <b>dolor</b> sit amet consectetur adipisicing elit. Odit eius quisquam assumenda vitae illum amet. Neque harum quaerat quidem praesentium doloribus rerum modi deleniti ipsum repellendus, itaque adipisci nobis quis!</p>
+    <ol>
+        <li>water</li>
+        <li>air</li>
+        <li>land</li>
+    </ol>
+    <ul>
+        <li>mars</li>
+        <li>jupiter</li>
+        <li>mercury</li>
+    </ul>
+    <table>
+        <tr>
+            <td>serail number</td>
+            <td>name</td>
+            <td>description</td>
+        </tr>
+        <tr>
+            <td>1 </td>
+            <td style="color: blue;">rice</td>
+            <td style="font-weight: 900;">tea</td>
+        </tr>
+        <tr>
+            <td>2 </td>
+            <td style="color: red;">beef</td>
+            <td>lipton</td>
+        </tr>
+        <tr>
+            <td>3 </td>
+            <td style="color: green;">nescafe</td>
+            <td>bornvita</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>water</td>
+            <td>faro</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>something</td>
+            <td>philips</td>
+        </tr>
+        
+    </table>
+    <p class="jss1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores odio soluta odit accusamus, repellat sequi saepe sapiente tempora perspiciatis ipsum nesciunt delectus, dolores obcaecati expedita iure a nemo! Accusamus, fuga!</p>
+        <p class="jss3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ad omnis assumenda ipsum pariatur neque eos quasi perferendis provident, possimus veritatis ea hic blanditiis repellat. Eligendi commodi quos vel fuga.</p>
+        <p class="jss1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, consequatur nam delectus quia iure maiores facilis neque at dolorum non iste error porro impedit quidem rem nulla veritatis ea. Atque.</p>
+        <p class="jss2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem labore animi totam, laboriosam qui recusandae non, cumque accusantium velit ex molestias? Ullam ad minus aperiam eaque odit necessitatibus ratione animi!</p>
+        <p class="jss3" id="jfir">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem labore animi totam, laboriosam qui recusandae non, cumque accusantium velit ex molestias? Ullam ad minus aperiam eaque odit necessitatibus ratione animi!</p>
+        <p class="jss2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem labore animi totam, laboriosam qui recusandae non, cumque accusantium velit ex molestias? Ullam ad minus aperiam eaque odit necessitatibus ratione animi!</p>
+        <p class="jss3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem labore animi totam, laboriosam qui recusandae non, cumque accusantium velit ex molestias? Ullam ad minus aperiam eaque odit necessitatibus ratione animi!</p>
+        <p class="jss1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem labore animi totam, laboriosam qui recusandae non, cumque accusantium velit ex molestias? Ullam ad minus aperiam eaque odit necessitatibus ratione animi!</p>
+
+        <form action="/your-name/" method="post">
+            <label for="your_name">Your name: </label>
+            <input id="your_name" type="text" name="your_name" value="{{ current_name }}">
+            <input type="submit" value="login">
+        </form>
+</body>
+</html>

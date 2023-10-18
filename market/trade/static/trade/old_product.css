@@ -1,0 +1,35 @@
+.table1, td, tr{
+    border: 2px solid;
+}
+.table1{
+    width: 100%;
+    line-height: 100%;
+    border-collapse: collapse ;
+    
+}
+td{
+    height: 100%;
+}
+
+.category{
+    text-align:center ;
+}
+
+tr, td{
+    border-bottom: 5px solid #ddd;
+}
+
+tr:hover{background-color: pink;}
+tr:nth-child(even){background-color: green;}
+.table1{
+    background-color: aqua;
+}
+
+.f{
+    color:red;
+}
+
+.g{
+    text-align: right;
+}
+
