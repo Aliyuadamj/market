@@ -1,0 +1,22 @@
+{% extends 'trade/base.html' %}
+<style>
+    .cardbody{
+        height: 500px;
+        display: flex;
+        align-items: center;
+    }
+</style>
+
+{%block body%}
+<div class="card" style="width: 30rem; margin: 8px;">
+    <img style="max-height: 200px; height: 200px; min-width: 100%;" src="{% if product.image %}{{product.image.url}}{% endif %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{product.name}}</h5>
+            <p class="card-text">{{ product.description | truncatechars:30 }}</p>
+            <p class="card-text">{{ product.price }}</p>
+            <p class="card-text">{{ product.created}}</p>
+            <p class="card-text">{{ product.updated }}</p>
+            <a href="http://127.0.0.1:8000/products/{{ product.pk}} " class="btn btn-primary">View Details</a>
+        </div>
+    </div>
+{%endblock%}

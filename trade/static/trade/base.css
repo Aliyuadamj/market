@@ -1,0 +1,62 @@
+body{
+    margin: 0%;
+}
+
+section {
+    
+    margin: 75px 100px;
+}
+
+header{
+    background-image: url(images/coffeebackground.jpeg);
+    background-size: contain;
+    height: 500px;
+}
+
+#tiny-img01{
+    display: flex;
+    justify-content: center;
+
+}
+
+.tiny-img{
+    display: flex;
+    align-self: center;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    border: 1px solid white;
+}
+
+.sen1 ,.sen2{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-group{
+    display: flex;
+    justify-content: right;
+
+}
+.bodyhd{
+    display: flex;
+    justify-content: right;
+    }
+
+nav{
+    background-color: #F2DBB2;
+}
+
+button{
+
+    background-color: #6f4e37;
+    
+}
+.btn-group{
+    background-color: #F2DBB2;
+}
+.product-footer{
+    height: 250px;
+    background-color: #1D0168;
+}
