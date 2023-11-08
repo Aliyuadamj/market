@@ -6,7 +6,7 @@ from .models import Product,Category,Comment
 
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ["id", "name", "price", "description", "created", "updated"]
+    list_display = ["id", "name", "price", "description", "created", "updated", "image"]
     
 
 class CategoryAdmin(admin.ModelAdmin):

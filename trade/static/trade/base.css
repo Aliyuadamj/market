@@ -56,7 +56,22 @@ button{
 .btn-group{
     background-color: #F2DBB2;
 }
+
 .product-footer{
+    
     height: 250px;
     background-color: #1D0168;
+    
+}
+#imagebody{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+tr{
+    margin-right: 20px;
+}
+
+#footer-line{
+    text-align: center;
 }
